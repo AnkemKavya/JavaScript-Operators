@@ -7,9 +7,9 @@ function onClickSendOTP() {
 
 function onClickLogIn() {
     debugger;
-    let inputotp = document.getElementById("txtLogin").value;
+    let inputotp = Number(document.getElementById("txtLogin").value);
     let login = document.getElementById("pResult");
-    if(inputotp == otp) {
+    if(inputotp === otp) {
         login.innerHTML = "🎉 Successfully Logged In.";
         login.style.color = "Green";
         login.style.fontWeight = "bold";
